@@ -5,7 +5,7 @@ import FastTravelComponent from './FastTravelComponent';
 const FastTravelComponents = () => {
   return (
     <>
-        <div id='aftc' className="fixed bottom-[35%] right-0 flex flex-col gap-3 m-2">
+        <div id='aftc' className="fixed bottom-[35%] right-0 flex flex-col gap-3 m-2 z-10">
 
             <div id='ft-outer' className="w-4 h-4 flex justify-center items-center">
                 <a href="#origin">
