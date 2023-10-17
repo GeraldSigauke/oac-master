@@ -1,0 +1,960 @@
+@tailwind base;
+@tailwind pages;
+@tailwind utilities;
+
+:root{
+  --mainTextColor-light:#ffff00;
+  --secondaryTextColor-light:#d50000;
+  --tertiaryColor-light: #18012d;
+  --quaternaryColor-light: #18012d;
+  --mainLinkColor-light:#0da2b8;
+  --mainBorderColor-light:rgb(218, 218, 218);
+  --mainBgColor-light:linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+  --secondaryBgColor-light: #130127;
+  --tertiaryBgColor-light: #120245;
+  --quaternaryBgColor-light: #18012d;
+
+  --mainTextColor-dark:#fff;
+  --secondaryTextColor-dark:#adb0b1;
+  --mainLinkColor-dark:rgb(30, 190,214);
+  --mainBorderColor-dark:#2b3031;
+  --mainBgColor-dark:#131415;
+
+  --mainTextColor:var(--mainTextColor-dark);
+  --secondaryTextColor:var(--secondaryTextColor-dark);
+  --mainLinkColor:var(--mainLinkColor-dark);
+  --mainBorderColor:var(--mainBorderColor-dark);
+  --mainBgColor:var(--mainBgColor-dark);
+
+}
+
+/** Navbar Component Starts Here */
+
+#light #navbar {
+  background-color: #18012d;
+  color: #ffff00;
+}
+
+/** Navbar Component Ends Here */
+
+
+#light #ft-inner {
+  border-radius: 50%;
+  background-color: #18012d; 
+}
+
+#dark #ft-inner {
+  border-radius: 50%;
+  background-color: #18012d; 
+}
+
+#light #ft-inner:hover {
+  border-radius: 50%;
+  background-color: hsl(28deg 100% 50%);  
+  transition: 0.3s;
+}
+
+#dark #ft-inner:hover {
+  border-radius: 50%;
+  background-color: #000000;  
+  transition: 0.3s;
+}
+
+#light #ft-outer {
+  border-radius: 50%;
+  background-color: hsl(28deg 100% 50%);
+}
+
+#dark #ft-outer {
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+#light #ft-outer:hover {
+  border-radius: 50%;
+  background-color: #18012d;  
+  transition: 0.3s;
+}
+
+#dark #ft-outer:hover {
+  border-radius: 50%;
+  background-color:   #18012d;
+  transition: 0.3s;
+}
+
+/** Home Starts Here */
+
+#light #home {
+  background-color: hsl(0, 100%, 50%);
+}
+
+#dark #home {
+  background-color: hsl(276, 93%, 6%) 100%;
+}
+
+/** Home Starts Here */
+
+/** Testimonials Page Starts Here */
+
+#light #testimonials {
+  color: rgb(73, 73, 73);
+  border-radius: 2.5%;
+}
+
+#light #swiper-slide {
+
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=d3d2df&c2=ffffff&gt=l&gd=dcr
+  */
+  background: #D3D2DF;
+  background: linear-gradient(270deg, #D3D2DF, #FFFFFF);
+  color: rgb(73, 73, 73);
+}
+#dark #swiper-slide {
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=101010&c2=010101&gt=l&gd=dcr
+  */
+  background: #101010;
+  background: linear-gradient(270deg, #101010, #010101);
+  color: gray;
+  }
+
+body {
+  background-color: #000000;
+}
+.main {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* height: 100vh; */
+  margin-top: 10%;
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 200px;
+  background-color: transparent;
+  border-radius: 10px;
+  background-size: cover;
+  /* border: 1px solid white; */
+  text-align: center;
+  /* font-family: "Courier New", Courier, monospace; */
+  /* background-image: url(./assets/slideBG.png); */
+  color: #ffffff;
+}
+.testimonials-profile-circle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+}
+.testimonial-avatar {
+  width: 128px;
+  height: 128px;
+  border: 3px solid #2c5282;
+  border-radius: 50%;
+}
+.review-by {
+  color: #2c5282;
+  font-size: 18px;
+}
+.head {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+}
+.head-p {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+  border: 2px solid #2c5282 !important;
+  /* padding: 1px !important; */
+  border-radius: 1px !important;
+  /* padding-left: 5px !important; */
+  width: 30px !important;
+  height: 1px !important;
+  /* padding-right: 5px !important; */
+}
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  border: 2px solid hsl(0deg 100% 50%) !important;
+  /* padding: 1px !important; */
+  border-radius: 1px !important;
+  /* padding-left: 5px !important; */
+  width: 30px !important;
+  height: 1px !important;
+  /* padding-right: 5px !important; */
+}
+
+#dark #testimonials {
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=101010&c2=010101&gt=l&gd=dcr
+  */
+  background: #101010;
+  background: linear-gradient(270deg, #101010, #010101);
+  color: gray;
+  border-radius: 2.5%;
+}
+
+/** Testimonials Page Ends Here */
+
+#logo {
+  width: 282px;
+  height: 62.5px;
+}
+
+#d2 {
+  background-color: rgba(251, 251, 251, 0.15);
+}
+
+/* #navbar {
+    position: absolute;
+} */
+
+/* Dark and Light Mode */
+
+#light {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+  color: #000;
+}
+
+#light #text {
+  color: #ffff00;
+}
+
+#light #text2 {
+  color: var(--tertiaryColor-light);
+}
+
+#light #text3 {
+  color: #000;
+}
+
+#light #text4 {
+  color: #d50000;
+}
+
+#light #text5 {
+  color: #F37403;
+}
+
+#light #text6 {
+  color: #ffff00;
+}
+
+#light #text10 {
+  color: #ffff00;
+}
+
+#light #button {
+  background-color: var(--secondaryBgColor-light);
+  color: #ffff00;
+}
+
+#light #button1 {
+  background-color: var(--secondaryBgColor-light);
+  color: #ffff00;
+}
+
+#light #submit {
+  background-color: #000;
+  color: #ffff00;
+}
+
+#light #star {
+  color: #120245;
+}
+
+#light #name {
+  background-color: var(--secondaryBgColor-light);
+  color: gray;
+  border-color: grey;
+}
+
+#light #email {
+  background-color: var(--secondaryBgColor-light);
+  color: gray;
+  border-color: grey;
+}
+
+#light #subject {
+  background-color: var(--secondaryBgColor-light);
+  color: gray;
+  border-color: grey;
+}
+
+#light #message {
+  background-color: var(--secondaryBgColor-light);
+  color: gray;
+  border-color: grey;
+}
+
+#light #submit {
+  background-color: var(--secondaryBgColor-light);
+  color: #ffff00;
+}
+
+#light #hero {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+}
+
+#light #purple-button{
+  background-color: var(--secondaryBgColor-light);
+  color: #FFFF00;
+}
+
+#light #transparent-button{
+  background-color: #ffff0000;
+  color: #120245;
+}
+
+#light #purple-button:hover{
+  background-color: #FFFF00;
+  color: #120245;
+  transition: 0.3s;
+}
+
+#light #transparent-button:hover{
+  background-color: #120245;
+  color: #FFFF00;
+  transition: 0.3s;
+}
+
+#light #swiperpage {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+}
+
+#light #content {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+}
+
+#light #pricing2 {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+}
+
+#light #pricingpage {
+  background-color: #18012d;
+  color: gray;
+  border-radius: 7.5px;
+}
+
+#light #member {
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=f7f503&c2=f37403&gt=l&gd=dcr
+  */
+  background: #ffff00;
+  background: linear-gradient(270deg, #ffff00, #f3bb03);
+  border-radius: 2.5%;
+}
+
+#light #testimonials2 {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+}
+
+#light #contactus2 {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(3deg 100% 50%) 5%,
+    hsl(6deg 100% 50%) 10%,
+    hsl(8deg 100% 50%) 15%,
+    hsl(12deg 100% 50%) 19%,
+    hsl(14deg 100% 50%) 24%,
+    hsl(17deg 100% 50%) 29%,
+    hsl(20deg 100% 50%) 34%,
+    hsl(23deg 100% 50%) 39%,
+    hsl(26deg 100% 50%) 44%,
+    hsl(28deg 100% 50%) 48%
+  );
+}
+
+#light #footer {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(272deg 94% 7%) 5%,
+    hsl(272deg 95% 7%) 10%,
+    hsl(272deg 95% 8%) 15%,
+    hsl(272deg 95% 8%) 19%,
+    hsl(273deg 95% 9%) 24%,
+    hsl(273deg 96% 9%) 29%,
+    hsl(273deg 96% 9%) 34%,
+    hsl(273deg 96% 10%) 39%,
+    hsl(273deg 96% 10%) 44%,
+    hsl(273deg 96% 10%) 48%,
+    hsl(274deg 96% 11%) 53%,
+    hsl(274deg 96% 11%) 58%,
+    hsl(274deg 97% 12%) 63%,
+    hsl(274deg 97% 12%) 68%,
+    hsl(273deg 97% 12%) 72%,
+    hsl(275deg 100% 13%) 77%,
+    hsl(275deg 100% 13%) 82%,
+    hsl(274deg 100% 13%) 86%,
+    hsl(274deg 100% 14%) 91%,
+    hsl(275deg 100% 14%) 96%,
+    hsl(275deg 100% 15%) 100%
+  );
+}
+
+#dark #text {
+  color: #ffff00;
+}
+
+#dark #text2 {
+  color: #ff4d00;
+}
+
+#dark #text3 {
+  color: grey;
+}
+
+#dark #text4 {
+  color: #ffff00;
+}
+
+#dark #text5 {
+  color: #F37403;
+}
+
+#dark #text6 {
+  color: #f33703;
+}
+
+#dark #text7 {
+  color: #f37703;
+}
+
+#dark #text8 {
+  color: #f39b03;
+}
+
+#dark #text9 {
+  color: #f3cb03;
+}
+
+#dark #text10 {
+  color: #ff4d00;
+}
+
+#dark #button {
+  background-color: #ff4d00;
+  color: #454242;
+}
+
+#dark #button1 {
+  background-color: #ffff00;
+  color: #120245;
+}
+
+#dark #submit {
+  background-color: #ffff00;
+  color: #000;
+}
+
+#dark #star {
+  color: #ffff00;
+}
+
+#dark #name {
+  background-color: #18012d;
+  color: gray;
+  border-color: grey;
+}
+
+#dark #email {
+  background-color: #18012d;
+  color: gray;
+  border-color: grey;
+}
+
+#dark #subject {
+  background-color: #18012d;
+  color: gray;
+  border-color: grey;
+}
+
+#dark #message {
+  background-color: #18012d;
+  color: gray;
+  border-color: grey;
+}
+
+#dark {
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=333333&c2=010101&gt=l&gd=dcr
+  */
+  background: #130127;
+  background: linear-gradient(270deg, #130127, #010101);
+  color: gray;
+}
+
+#dark #navbar {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(272deg 94% 7%) 5%,
+    hsl(272deg 95% 7%) 10%,
+    hsl(272deg 95% 8%) 15%,
+    hsl(272deg 95% 8%) 19%,
+    hsl(273deg 95% 9%) 24%,
+    hsl(273deg 96% 9%) 29%,
+    hsl(273deg 96% 9%) 34%,
+    hsl(273deg 96% 10%) 39%,
+    hsl(273deg 96% 10%) 44%,
+    hsl(273deg 96% 10%) 48%,
+    hsl(274deg 96% 11%) 53%,
+    hsl(274deg 96% 11%) 58%,
+    hsl(274deg 97% 12%) 63%,
+    hsl(274deg 97% 12%) 68%,
+    hsl(273deg 97% 12%) 72%,
+    hsl(275deg 100% 13%) 77%,
+    hsl(275deg 100% 13%) 82%,
+    hsl(274deg 100% 13%) 86%,
+    hsl(274deg 100% 14%) 91%,
+    hsl(275deg 100% 14%) 96%,
+    hsl(275deg 100% 15%) 100%
+  );
+  color: #ffff00;
+}
+
+#dark #hero {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(273deg 94% 6%) 5%,
+    hsl(272deg 94% 6%) 10%,
+    hsl(273deg 94% 6%) 15%,
+    hsl(272deg 93% 6%) 19%,
+    hsl(273deg 93% 6%) 24%,
+    hsl(272deg 93% 5%) 29%,
+    hsl(274deg 93% 5%) 34%,
+    hsl(275deg 100% 5%) 39%,
+    hsl(274deg 100% 5%) 44%,
+    hsl(275deg 100% 5%) 48%,
+    hsl(274deg 100% 5%) 53%,
+    hsl(275deg 100% 4%) 58%,
+    hsl(274deg 100% 4%) 63%,
+    hsl(276deg 100% 4%) 68%,
+    hsl(275deg 100% 4%) 72%,
+    hsl(277deg 100% 4%) 77%,
+    hsl(275deg 100% 3%) 82%,
+    hsl(278deg 100% 3%) 86%,
+    hsl(276deg 100% 3%) 91%,
+    hsl(279deg 100% 3%) 96%,
+    hsl(277deg 100% 3%) 100%
+  );
+}
+
+#dark #transparent-button{
+  background-color: #00000000;
+  color: #FFFF00;
+}
+
+#dark #purple-button{
+  background-color: #FFFF00;
+  color: #120245;
+}
+
+#dark #transparent-button:hover{
+  background-color: #FFFF00;
+  color: #120245;
+  transition: 0.3s;
+}
+
+#dark #purple-button:hover{
+  background-color: #F37403;
+  color: #120245;
+  transition: 0.3s;
+}
+
+#dark #content {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(273deg 94% 6%) 5%,
+    hsl(272deg 94% 6%) 10%,
+    hsl(273deg 94% 6%) 15%,
+    hsl(272deg 93% 6%) 19%,
+    hsl(273deg 93% 6%) 24%,
+    hsl(272deg 93% 5%) 29%,
+    hsl(274deg 93% 5%) 34%,
+    hsl(275deg 100% 5%) 39%,
+    hsl(274deg 100% 5%) 44%,
+    hsl(275deg 100% 5%) 48%,
+    hsl(274deg 100% 5%) 53%,
+    hsl(275deg 100% 4%) 58%,
+    hsl(274deg 100% 4%) 63%,
+    hsl(276deg 100% 4%) 68%,
+    hsl(275deg 100% 4%) 72%,
+    hsl(277deg 100% 4%) 77%,
+    hsl(275deg 100% 3%) 82%,
+    hsl(278deg 100% 3%) 86%,
+    hsl(276deg 100% 3%) 91%,
+    hsl(279deg 100% 3%) 96%,
+    hsl(277deg 100% 3%) 100%
+  );
+} 
+
+#dark #pricing2 {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(273deg 94% 6%) 5%,
+    hsl(272deg 94% 6%) 10%,
+    hsl(273deg 94% 6%) 15%,
+    hsl(272deg 93% 6%) 19%,
+    hsl(273deg 93% 6%) 24%,
+    hsl(272deg 93% 5%) 29%,
+    hsl(274deg 93% 5%) 34%,
+    hsl(275deg 100% 5%) 39%,
+    hsl(274deg 100% 5%) 44%,
+    hsl(275deg 100% 5%) 48%,
+    hsl(274deg 100% 5%) 53%,
+    hsl(275deg 100% 4%) 58%,
+    hsl(274deg 100% 4%) 63%,
+    hsl(276deg 100% 4%) 68%,
+    hsl(275deg 100% 4%) 72%,
+    hsl(277deg 100% 4%) 77%,
+    hsl(275deg 100% 3%) 82%,
+    hsl(278deg 100% 3%) 86%,
+    hsl(276deg 100% 3%) 91%,
+    hsl(279deg 100% 3%) 96%,
+    hsl(277deg 100% 3%) 100%
+  );
+}
+
+#dark #pricingpage {
+  background-color: #18012d;
+  color: gray;
+  border-radius: 7.5px;
+}
+
+#dark #member {
+  background-color: #000;
+  border-radius: 2.5%;
+}
+
+#dark #testimonials2 {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(273deg 94% 6%) 5%,
+    hsl(272deg 94% 6%) 10%,
+    hsl(273deg 94% 6%) 15%,
+    hsl(272deg 93% 6%) 19%,
+    hsl(273deg 93% 6%) 24%,
+    hsl(272deg 93% 5%) 29%,
+    hsl(274deg 93% 5%) 34%,
+    hsl(275deg 100% 5%) 39%,
+    hsl(274deg 100% 5%) 44%,
+    hsl(275deg 100% 5%) 48%,
+    hsl(274deg 100% 5%) 53%,
+    hsl(275deg 100% 4%) 58%,
+    hsl(274deg 100% 4%) 63%,
+    hsl(276deg 100% 4%) 68%,
+    hsl(275deg 100% 4%) 72%,
+    hsl(277deg 100% 4%) 77%,
+    hsl(275deg 100% 3%) 82%,
+    hsl(278deg 100% 3%) 86%,
+    hsl(276deg 100% 3%) 91%,
+    hsl(279deg 100% 3%) 96%,
+    hsl(277deg 100% 3%) 100%
+  );
+}
+
+#dark #contactus2 {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(273deg 94% 6%) 5%,
+    hsl(272deg 94% 6%) 10%,
+    hsl(273deg 94% 6%) 15%,
+    hsl(272deg 93% 6%) 19%,
+    hsl(273deg 93% 6%) 24%,
+    hsl(272deg 93% 5%) 29%,
+    hsl(274deg 93% 5%) 34%,
+    hsl(275deg 100% 5%) 39%,
+    hsl(274deg 100% 5%) 44%,
+    hsl(275deg 100% 5%) 48%,
+    hsl(274deg 100% 5%) 53%,
+    hsl(275deg 100% 4%) 58%,
+    hsl(274deg 100% 4%) 63%,
+    hsl(276deg 100% 4%) 68%,
+    hsl(275deg 100% 4%) 72%,
+    hsl(277deg 100% 4%) 77%,
+    hsl(275deg 100% 3%) 82%,
+    hsl(278deg 100% 3%) 86%,
+    hsl(276deg 100% 3%) 91%,
+    hsl(279deg 100% 3%) 96%,
+    hsl(277deg 100% 3%) 100%
+  );
+}
+
+#dark #footer {
+  background-image: linear-gradient(
+    135deg,
+    hsl(272deg 94% 7%) 0%,
+    hsl(272deg 94% 7%) 5%,
+    hsl(272deg 95% 7%) 10%,
+    hsl(272deg 95% 8%) 15%,
+    hsl(272deg 95% 8%) 19%,
+    hsl(273deg 95% 9%) 24%,
+    hsl(273deg 96% 9%) 29%,
+    hsl(273deg 96% 9%) 34%,
+    hsl(273deg 96% 10%) 39%,
+    hsl(273deg 96% 10%) 44%,
+    hsl(273deg 96% 10%) 48%,
+    hsl(274deg 96% 11%) 53%,
+    hsl(274deg 96% 11%) 58%,
+    hsl(274deg 97% 12%) 63%,
+    hsl(274deg 97% 12%) 68%,
+    hsl(273deg 97% 12%) 72%,
+    hsl(275deg 100% 13%) 77%,
+    hsl(275deg 100% 13%) 82%,
+    hsl(274deg 100% 13%) 86%,
+    hsl(274deg 100% 14%) 91%,
+    hsl(275deg 100% 14%) 96%,
+    hsl(275deg 100% 15%) 100%
+  );
+}
+
+/* Switch and Toggle: */
+
+/* The Switch - the box around the slider */
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#switch input {
+  display: none;
+}
+
+#slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+#slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + #slider {
+  background-color: gray;
+}
+
+input:focus + #slider {
+  box-shadow: 0 0 1px rgb(207, 206, 224);
+}
+
+input:checked + #slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+
+@media (min-width: 768px) {
+  
+  #switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+
+  #switch input {
+    display: none;
+  }
+
+  #slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  gray;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+
+  #slider:before {
+    position: absolute;
+    content: '';
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color:  #000;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + #slider {
+    background-color: gray;
+  }
+
+  input:focus + #slider {
+    box-shadow: 0 0 1px rgb(207, 206, 224);
+  }
+
+  input:checked + #slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+}
+
+/** Pricin*/
+#pricing-block-5 {
+  height: 300px;
+  padding-top: 55px;
+}
+
+@media (min-width: 992px) {
+  #pricing-block-5 {
+    height: 400px;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
