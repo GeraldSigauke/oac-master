@@ -40,7 +40,12 @@ const SwiperPage = () => {
             {slide_img.map((img, i) => {
               return (
                 <SwiperSlide key={i}>
-                  <img id="swiper" className="rounded-lg" src={img} alt="" />
+                  <img 
+                    id="swiper" 
+                    className="rounded-lg" 
+                    src={img} 
+                    alt=""
+                  />
                 </SwiperSlide>
               );
             })}
