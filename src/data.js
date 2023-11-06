@@ -23,6 +23,29 @@ export const navLink = [
     }
 ];
 
+export const slides = [
+    {
+        image: images.o1,
+        title: "slide 1"
+    }, 
+    {
+        image: images.o2,
+        title: "slide 2"
+    },
+    {
+        image: images.o3,
+        title: "slide 3"
+    },
+    {
+        image: images.o4,
+        title: "slide 4"
+    },
+    {
+        image: images.o5,
+        title: "slide 5"
+    }
+]
+
 export const lps = [
     {
         id: 1,

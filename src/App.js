@@ -13,6 +13,9 @@ import ContactUsPage from './pages/ContactUsPage';
 import FooterComponent from './components/FooterComponent';
 import SwiperPage from './pages/SwiperPage';
 import FastTravelComponents from './components/FastTravelComponents';
+import Nav from './components/Nav';
+import Slider from './pages/Slider';
+import { slides } from "./data";
 
 // Dark and Light Theme Stuff:
 
@@ -31,9 +34,11 @@ function App() {
         <div className="font-sans" id={theme}>
           <div id='origin' className=""></div>
           <NavbarComponent />
+          <Nav />
           <Home />
           <HeroPage />
-          <SwiperPage />
+          <Slider slides={ slides } />
+          {/* <SwiperPage /> */}
           <About />
           <AboutPage />
           <Pricing />

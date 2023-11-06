@@ -48,6 +48,20 @@
   color: #ffff00;
 }
 
+@media (max-width: 768px) {
+  #nav-desktop {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  #nav-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 /** Navbar Component Ends Here */
 
 
@@ -106,6 +120,10 @@
 }
 
 /** Home Starts Here */
+
+#slider-image {
+  width: 100%;
+}
 
 /** Testimonials Page Starts Here */
 
