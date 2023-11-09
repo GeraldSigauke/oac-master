@@ -15,6 +15,8 @@ import FastTravelComponents from './components/FastTravelComponents';
 import Nav from './components/Nav';
 import Slider from './pages/Slider';
 import { slides } from "./data";
+import VisitUsPage from './pages/VisitUsPage';
+import VisitUs from './components/VisitUs';
 
 // Dark and Light Theme Stuff:
 
@@ -44,6 +46,8 @@ function App() {
           <PricingPage />
           <Testimonials />
           <TestimonialsPage />
+          <VisitUs />
+          <VisitUsPage />
           <ContactUs />
           <ContactUsPage />
           <FooterComponent />

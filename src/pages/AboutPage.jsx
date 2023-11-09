@@ -76,8 +76,12 @@ const AboutPage = () => {
                 </div>
 
                 <div>
-                  <img src="https://images.pexels.com/photos/8613093/pexels-photo-8613093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full rounded-lg shadow-lg z-30"
-                    alt="" />
+                  <img src="https://images.pexels.com/photos/5088021/pexels-photo-5088021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full rounded-lg shadow-lg z-30"
+                    alt="" 
+                  style={{
+                    aspectRatio: ""
+                  }}
+                  />
                 </div>
               </div>
             </div>

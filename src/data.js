@@ -18,6 +18,11 @@ export const navLink = [
     },
     {
         id: 4,
+        link: 'Visit Us',
+        url: '#visitus'
+    },
+    {
+        id: 5,
         link: 'Contact Us',
         url: '#contactus'
     }
@@ -225,6 +230,11 @@ export const footerUsefulLinks = [
     },
     {
         id: 4,
+        usefulLink: 'Visit Us',
+        url: '#visitus'
+    },
+    {
+        id: 5,
         usefulLink: 'Contact Us',
         url: '#contactus'
     }
