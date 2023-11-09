@@ -5,7 +5,7 @@ import Contact from '../components/Contact'
 const VisitUsPage = () => {
   return (
     <>
-    <div id='contactus2' className="py-1">
+    <div id='contactus2' className="lg:h-screen">
       <div class="container my-24" id="contact">
           <h2 id="text6" class="text-3xl font-bold text-center pt-6 text-[#120245]">
             Visit Us

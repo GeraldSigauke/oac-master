@@ -5,7 +5,7 @@ import { ascg1t7, wlg5t7, wlg8t9, wlg10t12 } from "../data";
 const PricingPage = () => {
   return (
     <>
-      <div id='pricing2' className="py-10">
+      <div id='pricing2' className="py-10 lg:h-screen">
         {/** Container for demo purpose */} 
         <div class="container my-24 mx-auto md:px-6">
 

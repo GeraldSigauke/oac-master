@@ -3,7 +3,7 @@ import React from 'react';
 const AboutPage = () => {
   return (
     <>
-      <div id='content' className="py-1">
+      <div id='content' className="lg:h-screen">
         {/* <!-- Container for demo purpose --> */}
         <div class="container my-24 px-6 mx-auto">
 

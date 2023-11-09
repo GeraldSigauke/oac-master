@@ -12,7 +12,7 @@ import { testimonials } from "../data";
 const TestimonialsPage = () => {
   return (
     <>
-      <div id='testimonials2' className="py-10">
+      <div id='testimonials2' className="py-10 lg:h-screen">
         {/* <!-- Container for demo purpose --> */}
         <div class="container my-24 px-6 mx-auto">
 
