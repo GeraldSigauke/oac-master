@@ -11,7 +11,6 @@ import TestimonialsPage from './pages/TestimonialsPage';
 import ContactUs from './components/ContactUs';
 import ContactUsPage from './pages/ContactUsPage';
 import FooterComponent from './components/FooterComponent';
-import SwiperPage from './pages/SwiperPage';
 import FastTravelComponents from './components/FastTravelComponents';
 import Nav from './components/Nav';
 import Slider from './pages/Slider';
@@ -34,7 +33,7 @@ function App() {
         <div className="font-sans" id={theme}>
           <div id='origin' className=""></div>
           <NavbarComponent />
-          <Nav />
+          {/* <Nav /> */}
           <Home />
           <HeroPage />
           <Slider slides={ slides } />

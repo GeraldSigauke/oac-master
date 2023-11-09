@@ -121,118 +121,17 @@
 
 /** Home Starts Here */
 
-#slider-image {
-  width: 100%;
-}
+/** Slider Starts Here */
+
+
+
+/** Slider Ends Here */
 
 /** Testimonials Page Starts Here */
 
 #light #testimonials {
   color: rgb(73, 73, 73);
   border-radius: 2.5%;
-}
-
-#light #swiper-slide {
-
-  /*
-  * Created with https://www.css-gradient.com
-  * Gradient link: https://www.css-gradient.com/?c1=d3d2df&c2=ffffff&gt=l&gd=dcr
-  */
-  background: #D3D2DF;
-  background: linear-gradient(270deg, #D3D2DF, #FFFFFF);
-  color: rgb(73, 73, 73);
-}
-#dark #swiper-slide {
-  /*
-  * Created with https://www.css-gradient.com
-  * Gradient link: https://www.css-gradient.com/?c1=101010&c2=010101&gt=l&gd=dcr
-  */
-  background: #101010;
-  background: linear-gradient(270deg, #101010, #010101);
-  color: gray;
-  }
-
-body {
-  background-color: #000000;
-}
-.main {
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
-  /* height: 100vh; */
-  margin-top: 10%;
-}
-
-.mySwiper {
-  width: 100%;
-}
-
-.swiper-slide {
-  width: 200px;
-  background-color: transparent;
-  border-radius: 10px;
-  background-size: cover;
-  /* border: 1px solid white; */
-  text-align: center;
-  /* font-family: "Courier New", Courier, monospace; */
-  /* background-image: url(./assets/slideBG.png); */
-  color: #ffffff;
-}
-.testimonials-profile-circle {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding-top: 48px;
-}
-.testimonial-avatar {
-  width: 128px;
-  height: 128px;
-  border: 3px solid #2c5282;
-  border-radius: 50%;
-}
-.review-by {
-  color: #2c5282;
-  font-size: 18px;
-}
-.head {
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5em;
-  font-weight: 500;
-  font-family: "Courier New", Courier, monospace;
-}
-.head-p {
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: "Courier New", Courier, monospace;
-}
-.swiper-pagination-bullet-active {
-  background-color: #ffffff !important;
-  border: 2px solid #2c5282 !important;
-  /* padding: 1px !important; */
-  border-radius: 1px !important;
-  /* padding-left: 5px !important; */
-  width: 30px !important;
-  height: 1px !important;
-  /* padding-right: 5px !important; */
-}
-.swiper-pagination-bullet {
-  background-color: #ffffff !important;
-  border: 2px solid hsl(0deg 100% 50%) !important;
-  /* padding: 1px !important; */
-  border-radius: 1px !important;
-  /* padding-left: 5px !important; */
-  width: 30px !important;
-  height: 1px !important;
-  /* padding-right: 5px !important; */
 }
 
 #dark #testimonials {
